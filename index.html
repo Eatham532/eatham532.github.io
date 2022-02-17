@@ -5,45 +5,36 @@
 		<meta charset='utf8'>
 		</head>
 		<body>
-			<section id="gamearea">
-<div id="noflash" style="display: none;">
-<h2>Your browser does not support our Flash emulator.</h2>
-<p>Please use a modern browser such as <a href="https://www.google.com/chrome/">Chrome</a>, <a href="https://www.mozilla.org/en-US/firefox/">Firefox</a>, or <a href="https://www.microsoft.com/en-us/edge">Microsoft Edge</a>.</p>
-</div>
-<script>
-        // Ruffle config
+			<div id='ruffle'></div>
+			<script src='https://eatham532.github.io/ruffle/ruffle.js'></script>
+			<script>
+var swfobject = {};
+				swfobject.embedSWF = function(url, cont, width, height){
+    var ruffle = window.RufflePlayer.newest(),
+        player = Object.assign(document.getElementById(cont).appendChild(ruffle.createPlayer()), {
+            width: width,
+            height: height,
+            style: 'width: ' + width + 'px; height: ' + height + 'px',
+        });
+
+    player.load({ url: url });
+}   </script>
+			<div id="container"></div>
+			<script src="ruffle/ruffle.js"></script>
+			<script>
         window.RufflePlayer = window.RufflePlayer || {};
-        window.RufflePlayer.config = {
-            "autoplay": "off",
-            "upgradeToHttps": window.location.protocol === "https:"
-        };
-
-        // This is a fairly simple check for WebAssembly support
-        if(typeof WebAssembly !== "object" || typeof WebAssembly.instantiate !== "function") {
-            document.getElementById('noflash').removeAttribute('style');
-        }
-    </script>
-<script src="https://agi.armorgames.com/ruffle/ruffle.js"></script><iframe src="https://76e771e6023c20e40edeff450eedf980.safeframe.googlesyndication.com/safeframe/1-0-38/html/container.html" style="visibility: hidden; display: none;" data-ruffle-polyfilled=""></iframe>
-<div id="gamefilearea" class="" style="height:600px;">
-
-<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="900" height="600" id="gamefile" align="middle">
-<param name="allowScriptAccess" value="always">
-<param name="movie" value="https://cache.armorgames.com/files/games/gun-mayhem-2-more-ma-13824.swf?v=1373587527">
-<param name="quality" value="high">
-<param name="wmode" value="window">
-<param name="allowfullscreen" value="false">
-<param name="allowfullscreeninteractive" value="false">
-<param name="fullScreenAspectRatio" value="">
-<param name="quality" value="high">
-<param name="play" value="true">
-<param name="loop" value="true">
-<param name="menu" value="">
-<param name="flashvars" value="gameID=13824">
-<param name="hasPriority" value="true">
-
-<ruffle-embed src="https://cache.armorgames.com/files/games/gun-mayhem-2-more-ma-13824.swf?v=1373587527" width="900" height="600" id="gamefileEmbed" name="gamefile" align="middle" wmode="window" allowfullscreen="false" allowfullscreeninteractive="false" fullscreenaspectratio="" quality="high" play="true" loop="true" menu="" allowscriptaccess="always" flashvars="gameID=13824" haspriority="true" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer"></ruffle-embed>
-</object>
-
+        window.addEventListener("load", (event) => {
+            const ruffle = window.RufflePlayer.newest();
+            const player = ruffle.createPlayer();
+            const container = document.getElementById("container"); 
+            container.appendChild(player);
+            player.load({
+                url: "eatham532.github.io/gm2.swf", 
+                backgroundColor: "#000", 
+             });
+            player.style.width = "600px"; 
+            player.style.height = "400px";
+        });
 </div>
 </section>
     </script>
