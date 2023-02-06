@@ -1,3 +1,7 @@
+layout: page
+title: "Test title"
+permalink: /test
+
 Syntax highlighted code block
 
 # Header 1
