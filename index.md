@@ -8,7 +8,7 @@ date: 2025-10-02 12:00:00 -0000
 
 - **Software Engineering HSC Textbook**
 
-Year 11 and Year 12 content. [Link](https://github.com/Eatham532/Software-Engineering-HSC-Textbook)
+Year 11 and Year 12 content. [View Textbook](https://eatham532.github.io/Software-Engineering-HSC-Textbook/)
 
 - **Nexus Launcher**
 
