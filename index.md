@@ -4,10 +4,12 @@ title: Home
 date: 2025-10-02 12:00:00 -0000
 ---
 
-## Welcome to my GitHub Pages site
+## Projects
 
-This is a Jekyll-powered static site hosted on GitHub Pages.
+- *Software Engineering HSC Textbook*
 
-### About
+Year 11 and Year 12 content. [Link](https://github.com/Eatham532/Software-Engineering-HSC-Textbook)
 
-Welcome to my personal website. More content coming soon!
+- *Nexus Launcher*
+
+A project that spanned over 3 years. Had to end mid way due to lack of time. I hope to get back into this soon! [Link](https://github.com/Eatham532/NexusLauncher)
