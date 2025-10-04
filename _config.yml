@@ -27,9 +27,7 @@ twitter_username:
 github_username: Eatham532
 
 # Build settings
-theme: minima
 plugins:
-  - jekyll-feed
   - jekyll-sitemap
 
 # Exclude from processing.

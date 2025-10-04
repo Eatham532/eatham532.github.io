@@ -1,15 +1,23 @@
 ---
 layout: home
 title: Home
-date: 2025-10-02 12:00:00 -0000
+hero_title: "Developer & Creator"
+hero_subtitle: "Building projects and sharing knowledge"
 ---
 
-## Projects
+<h2 class="section-title">Featured Projects</h2>
 
-- **Software Engineering HSC Textbook**
+<div class="projects-grid">
+  <div class="project-card">
+    <h3>Software Engineering HSC Textbook</h3>
+    <p>Comprehensive Year 11 and Year 12 Software Engineering curriculum content for Higher School Certificate students.</p>
+    <a href="https://eatham532.github.io/Software-Engineering-HSC-Textbook/" target="_blank">View Textbook</a>
+  </div>
 
-Year 11 and Year 12 content. [View Textbook](https://eatham532.github.io/Software-Engineering-HSC-Textbook/)
+  <div class="project-card">
+    <h3>Nexus Launcher</h3>
+    <p>A multi-year project focused on creating an innovative launcher. Development paused due to time constraints, with plans to resume soon.</p>
+    <a href="https://github.com/Eatham532/NexusLauncher" target="_blank">View on GitHub</a>
+  </div>
+</div>
 
-- **Nexus Launcher**
-
-A project that spanned over 3 years. Had to end mid way due to lack of time. I hope to get back into this soon! [Link](https://github.com/Eatham532/NexusLauncher)
